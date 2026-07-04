@@ -45,7 +45,8 @@ app.get("/", async (request, reply) => {
   reply.redirect("/docs", 302);
 });
 app
-  .listen({ port: 4000, host: "127.0.0.1" })
+  // .listen({ port: 4000, host: "127.0.0.1" })
+  .listen({ port: 4000, host: "0.0.0.0" })
   .then(() => 1)
   .catch((err) => {
     app.log.error(`Error: ${err}`);

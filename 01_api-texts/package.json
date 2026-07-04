@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "prod": "tsc && node --env-file=.env dist/index.js"
+    "prod": "tsc && node --env-file=.env dist/index.js",
+    "container": "podman build -t api-texts . && podman run --rm -p 4000:4000 --env-file .env api-texts"
   },
   "keywords": [],
   "author": "",
