@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "NodeNext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "lib": ["es2022"],
+    "target": "es2022", 
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts", "**/old/**"]
+}
